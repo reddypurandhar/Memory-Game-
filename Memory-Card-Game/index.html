@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <h1>💡 Memory Card Game 💡</h1>
+        <p class="subtitle">Match the cards & test your memory!</p>
+        
+        <div class="controls">
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy (4x4)</option>
+                <option value="medium">Medium (6x6)</option>
+                <option value="hard">Hard (8x8)</option>
+            </select>
+            <button id="startGame">🚀 Start Game</button>
+        </div>
+
+        <p class="timer">⏳ Time: <span id="time">0</span> sec</p>
+
+        <div class="buttons">
+            <button id="pauseGame">⏸ Pause</button>
+            <button id="resetGame">🔄 Restart</button>
+        </div>
+
+        <div class="game-board"></div>
+    </div>
+
+    <audio id="flipSound" src="flip.mp3"></audio>
+    <audio id="matchSound" src="match.mp3"></audio>
+    <audio id="winSound" src="win.mp3"></audio>
+</body>
+</html>

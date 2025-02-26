@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.game-container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #ff4757;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #2f3542;
+    margin-bottom: 15px;
+}
+
+.controls {
+    margin-bottom: 10px;
+}
+
+select, button {
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button {
+    background: #2ed573;
+    color: white;
+}
+
+button:hover {
+    background: #1e90ff;
+}
+
+.timer {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.game-board {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.card {
+    background: linear-gradient(135deg, #ff4757, #ff6b81);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: transparent;
+    cursor: pointer;
+    transition: transform 0.5s, background 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card.flip {
+    background: linear-gradient(135deg, #1e90ff, #3742fa);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+#resetGame {
+    margin-top: 20px;
+
+    .buttons {
+        margin-top: 10px;
+    }
+    
+    button {
+        padding: 10px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    #pauseGame {
+        background: #ffcc00;
+        color: black;
+    }
+    
+    #pauseGame:hover {
+        background: #ff9900;
+    }
+    
+}
